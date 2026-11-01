@@ -1,1 +1,561 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deen Dayal Affordable Plots | Find Your Future</title>
+<meta name="description" content="Explore Deen Dayal Affordable Plots, project amenities, approvals, location and residential plot opportunities.">
+<style>
+:root{
+  --green:#103f38;
+  --green2:#176457;
+  --gold:#d39b42;
+  --cream:#f8f6ef;
+  --white:#fff;
+  --text:#24332f;
+  --muted:#66746e;
+  --border:#e5e3d9;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  font-family:Calibri,"Segoe UI",Arial,sans-serif;
+  font-size:17px;line-height:1.65;
+  background:var(--cream);color:var(--text);
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%;object-fit:cover}
+button,input,select,textarea{font:inherit}
+button,a{ -webkit-tap-highlight-color:transparent}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:var(--green);color:white;font-size:14px}
+.top-inner{display:flex;justify-content:space-between;gap:12px;padding:8px 0;flex-wrap:wrap}
+header{
+  background:#fffdf8;border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:100;
+}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand-icon{
+  width:47px;height:47px;border:1px solid var(--gold);
+  border-radius:50%;display:grid;place-items:center;
+  color:var(--green);font-size:25px;
+}
+.brand-name{font-size:22px;font-weight:800;color:var(--green);line-height:1.15}
+.brand small{font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:700}
+.nav-links{display:flex;align-items:center;gap:23px;font-size:15px;font-weight:700}
+.nav-links a:hover{color:var(--gold)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:47px;padding:11px 22px;border-radius:5px;
+  background:var(--green);color:white;border:1px solid var(--green);
+  font-weight:700;cursor:pointer;transition:.25s;
+}
+.btn:hover{background:var(--green2);transform:translateY(-2px)}
+.btn-gold{background:var(--gold);border-color:var(--gold);color:#fff}
+.btn-outline{background:transparent;color:var(--green);border-color:#cfcbbd}
+.btn-outline:hover{color:white}
+.menu-toggle{display:none;background:var(--green);color:white;border:0;border-radius:5px;width:46px;height:44px;font-size:24px;cursor:pointer}
+.hero{padding:55px 0 65px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:42px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:2.3px;text-transform:uppercase;color:var(--gold);font-weight:800}
+h1,h2,h3{line-height:1.17;color:var(--green)}
+h1{font-size:clamp(42px,5.2vw,68px);letter-spacing:-1.8px;margin:17px 0}
+h1 span{color:var(--gold)}
+.hero-copy>p{font-size:19px;color:var(--muted);max-width:560px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0}
+.trust-row{display:flex;flex-wrap:wrap;gap:22px;margin-top:30px;padding-top:23px;border-top:1px solid var(--border)}
+.trust-item{font-size:14px;font-weight:700;color:var(--green)}
+.trust-item strong{display:block;color:var(--gold);font-size:21px}
+.hero-visual{position:relative;min-width:0}
+.hero-image{
+  width:100%;height:470px;border-radius:12px;
+  object-fit:cover;box-shadow:0 18px 50px #103f3820;
+}
+.image-label{
+  position:absolute;bottom:20px;left:-20px;background:var(--green);
+  color:white;padding:20px 23px;border-radius:8px;max-width:260px;
+  box-shadow:0 12px 35px #0002;
+}
+.image-label h3{color:white;font-size:25px;margin:5px 0}
+.image-label p{font-size:14px;color:#e3ebe7}
+.float-card{
+  position:absolute;top:20px;right:-15px;background:white;
+  border:1px solid var(--border);padding:14px 18px;border-radius:8px;
+  box-shadow:0 8px 25px #0001;font-weight:700;color:var(--green);
+}
+.float-card span{color:var(--gold);font-size:13px;display:block}
+.stats{background:var(--green);color:white;padding:28px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{text-align:center;border-right:1px solid #ffffff30}
+.stat:last-child{border:0}
+.stat strong{font-size:30px;display:block;color:#f0c274}
+.stat span{font-size:15px}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-head h2{font-size:clamp(30px,4vw,43px);margin:10px 0 14px}
+.section-head p{font-size:18px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-image{height:420px;width:100%;border-radius:10px}
+.about-copy h2{font-size:40px;margin:12px 0 18px}
+.about-copy>p{color:var(--muted);margin-bottom:22px}
+.check-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:23px 0}
+.check-list li:before{content:"✓";color:var(--green2);font-weight:bold;margin-right:9px}
+.features-section{background:#f0eee5}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feature-card{background:white;padding:27px 23px;border:1px solid var(--border);border-radius:9px;transition:.25s}
+.feature-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px #103f3810}
+.feature-icon{width:52px;height:52px;display:grid;place-items:center;background:#f8edda;border-radius:50%;font-size:25px;margin-bottom:18px}
+.feature-card h3{font-size:22px;margin-bottom:10px}
+.feature-card p{font-size:16px;color:var(--muted)}
+.layout-section{background:#eaf2ed}
+.layout-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:40px;align-items:center}
+.layout-grid h2{font-size:39px;margin:12px 0}
+.layout-grid p{color:var(--muted);margin-bottom:18px}
+.layout-image{width:100%;height:420px;border-radius:10px;background:#ddd}
+.amenities-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.amenity{text-align:center;padding:22px 10px;border:1px solid var(--border);border-radius:9px;background:#fff}
+.amenity span{font-size:31px;display:block;margin-bottom:8px}
+.amenity h3{font-size:19px}
+.gallery-section{background:#f0eee5}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.gallery-item{overflow:hidden;border-radius:9px;background:white}
+.gallery-item img{height:230px;width:100%;transition:transform .35s}
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-item p{padding:12px 15px;font-weight:700;color:var(--green)}
+.approval-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.approval-card{padding:30px 24px;background:white;border:1px solid var(--border);border-radius:9px;text-align:center}
+.approval-icon{font-size:40px;color:var(--green2)}
+.approval-card h3{font-size:23px;margin:12px 0}
+.approval-card p{color:var(--muted);margin-bottom:17px}
+.approval-card a{color:var(--green2);font-weight:700;text-decoration:underline}
+.certificate-section{background:#eaf2ed}
+.certificate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.certificate-card{padding:15px;background:white;border:1px solid var(--border);border-radius:9px}
+.certificate-card img{width:100%;height:240px;object-fit:contain;background:#f6f5f0;border-radius:5px}
+.certificate-card h3{font-size:21px;margin:15px 0 5px}
+.certificate-card p{font-size:15px;color:var(--muted)}
+.certificate-card a{display:inline-block;margin-top:10px;color:var(--green2);font-weight:700}
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.location-grid h2{font-size:38px;margin:12px 0}
+.location-grid p{color:var(--muted)}
+.location-list{list-style:none;margin:20px 0}
+.location-list li{margin:10px 0}
+.location-list li:before{content:"✓";color:var(--green2);margin-right:10px;font-weight:bold}
+.map-frame{width:100%;height:350px;border:0;border-radius:10px;background:#e7e5dc}
+.contact-section{background:#f0eee5}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:start}
+.contact-copy h2{font-size:40px;margin:12px 0}
+.contact-copy p{color:var(--muted);margin-bottom:20px}
+.contact-detail{padding:15px 0;border-bottom:1px solid var(--border)}
+.contact-detail strong{display:block;color:var(--green)}
+.enquiry-form{background:white;border:1px solid var(--border);padding:30px;border-radius:10px}
+.enquiry-form h3{font-size:28px;margin-bottom:5px}
+.enquiry-form>p{color:var(--muted);margin-bottom:22px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:15px;font-weight:700;color:var(--green)}
+.field input,.field select,.field textarea{
+  width:100%;min-height:46px;border:1px solid #d9d8d0;border-radius:5px;
+  padding:10px 12px;background:#fff;outline:none;
+}
+.field textarea{min-height:100px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green2)}
+.enquiry-form .btn{width:100%;margin-top:18px}
+.qr-section{background:var(--green);color:white}
+.qr-section h2{color:white}
+.qr-section .section-head p{color:#d8e5df}
+.qr-grid{display:grid;grid-template-columns:repeat(2,minmax(0,230px));justify-content:center;gap:24px}
+.qr-card{background:white;color:var(--green);border-radius:9px;padding:22px;text-align:center}
+.qr-card img{width:160px;height:160px;object-fit:contain;margin:0 auto 12px}
+.qr-card h3{font-size:21px}
+.qr-card p{font-size:15px;color:var(--muted)}
+footer{background:#092e29;color:#d9e6e0;padding:48px 0 18px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:35px}
+footer h3{color:white;margin-bottom:15px;font-size:20px}
+footer p,footer a{font-size:15px;color:#c7d6cf}
+footer a{display:block;margin:7px 0}
+footer a:hover{color:#f0c274}
+.footer-bottom{border-top:1px solid #ffffff25;margin-top:30px;padding-top:17px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:14px}
+.reveal{animation:rise .7s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:1500px){.container{width:min(1300px,90%)}}
+@media(max-width:1000px){
+ .nav-links{gap:13px}
+ .hero-grid{gap:25px}
+ .hero-image{height:420px}
+ .feature-grid{grid-template-columns:repeat(2,1fr)}
+ .amenities-grid{grid-template-columns:repeat(4,1fr)}
+ .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+ body{font-size:17px}
+ .top-inner{justify-content:center;text-align:center}
+ .nav{min-height:72px}
+ .menu-toggle{display:block}
+ .nav-links{
+  display:none;position:absolute;top:100%;left:0;right:0;
+  background:#fffdf8;padding:18px 5%;border-top:1px solid var(--border);
+  box-shadow:0 12px 18px #0001;flex-direction:column;align-items:stretch;gap:0;
+ }
+ .nav-links.open{display:flex}
+ .nav-links a{padding:11px 5px;border-bottom:1px solid var(--border)}
+ .nav-links .btn{margin-top:12px}
+ .hero{padding:38px 0 45px}
+ .hero-grid,.about-grid,.layout-grid,.location-grid,.contact-grid{grid-template-columns:1fr}
+ .hero-grid{gap:35px}
+ h1{font-size:clamp(39px,10vw,57px)}
+ .hero-copy>p{font-size:18px}
+ .hero-image{height:350px}
+ .image-label{left:10px;bottom:10px;max-width:250px}
+ .float-card{right:10px;top:10px}
+ .stats-grid{grid-template-columns:repeat(2,1fr);gap:22px}
+ .stat:nth-child(2){border:0}
+ section{padding:55px 0}
+ .about-image{height:330px}
+ .about-copy h2,.layout-grid h2,.location-grid h2,.contact-copy h2{font-size:33px}
+ .layout-grid{gap:25px}
+ .layout-image{height:300px}
+ .amenities-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+ .gallery-grid{grid-template-columns:repeat(2,1fr)}
+ .gallery-item img{height:180px}
+ .approval-grid,.certificate-grid{grid-template-columns:1fr}
+ .certificate-card img{height:260px}
+ .map-frame{height:300px}
+ .contact-grid{gap:25px}
+ .enquiry-form{padding:22px}
+ .footer-grid{gap:25px}
+}
+@media(max-width:420px){
+ .container{width:91%}
+ .brand-name{font-size:19px}
+ .brand-icon{width:41px;height:41px}
+ .hero-buttons .btn{width:100%}
+ .trust-row{gap:14px}
+ .trust-item{flex:1 1 40%}
+ .feature-grid,.gallery-grid,.form-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}
+ .gallery-item img{height:220px}
+ .qr-grid{grid-template-columns:1fr}
+ .qr-card{max-width:260px;width:100%;margin:auto}
+ .footer-grid{grid-template-columns:1fr}
+ .footer-bottom{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+ <div class="container top-inner">
+  <span>Thoughtfully planned spaces for your future.</span>
+  <span>☎ +91 98765 43210 &nbsp; | &nbsp; info@example.com</span>
+ </div>
+</div>
+
+<header>
+ <div class="container nav">
+  <a class="brand" href="#home" aria-label="Deen Dayal home">
+   <span class="brand-icon">⌂</span>
+   <span><span class="brand-name">Deen Dayal</span><br><small>AFFORDABLE PLOTS</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="nav-links" id="navLinks">
+   <a href="#home">Home</a>
+   <a href="#about">About</a>
+   <a href="#project">Project</a>
+   <a href="#approvals">Approvals</a>
+   <a href="#amenities">Amenities</a>
+   <a href="#gallery">Gallery</a>
+   <a href="#location">Location</a>
+   <a class="btn" href="#contact">Enquire Now ↗</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div class="hero-copy reveal">
+   <div class="eyebrow">A new way to plan your future</div>
+   <h1>Find Your Place.<br><span>Build Your Dream.</span></h1>
+   <p>Explore Deen Dayal Affordable Plots and discover a thoughtfully planned community designed around your future, comfort and aspirations.</p>
+   <div class="hero-buttons">
+    <a href="#project" class="btn">Explore Project →</a>
+    <a href="#contact" class="btn btn-outline">Request Details</a>
+   </div>
+   <div class="trust-row">
+    <div class="trust-item"><strong>01</strong>Location Details</div>
+    <div class="trust-item"><strong>02</strong>Plot Information</div>
+    <div class="trust-item"><strong>03</strong>Project Approvals</div>
+    <div class="trust-item"><strong>04</strong>Development Plan</div>
+   </div>
+  </div>
+  <div class="hero-visual">
+   <img class="hero-image" src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1100&q=85" alt="Beautiful green residential landscape">
+   <div class="float-card"><span>PLAN WITH CONFIDENCE</span>Space for your future</div>
+   <div class="image-label">
+    <div class="eyebrow">Space to grow</div>
+    <h3>A Better Place for Your Future.</h3>
+    <p>Discover a place where your plans can take shape.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="stats">
+ <div class="container stats-grid">
+  <div class="stat"><strong>01</strong><span>Planned Community</span></div>
+  <div class="stat"><strong>02</strong><span>Project Information</span></div>
+  <div class="stat"><strong>03</strong><span>Approval Resources</span></div>
+  <div class="stat"><strong>04</strong><span>Customer Support</span></div>
+ </div>
+</div>
+
+<section id="about">
+ <div class="container about-grid">
+  <div>
+   <img class="about-image" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=85" alt="Modern architecture and landscaping" loading="lazy">
+  </div>
+  <div class="about-copy">
+   <div class="eyebrow">About the project</div>
+   <h2>A Thoughtful Start to Your Next Chapter</h2>
+   <p>Deen Dayal Affordable Plots aims to provide an organised residential plot experience with project information, planned infrastructure and convenient access to essential facilities. Connect with our team to understand the location, layout and applicable approvals.</p>
+   <ul class="check-list">
+    <li>Plot information</li><li>Planned road network</li>
+    <li>Project documentation</li><li>Location assistance</li>
+    <li>Development overview</li><li>Enquiry support</li>
+   </ul>
+   <a href="#contact" class="btn">Know More About Us →</a>
+  </div>
+ </div>
+</section>
+
+<section class="features-section" id="project">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Project highlights</div>
+   <h2>Designed Around Everyday Living</h2>
+   <p>Explore the key features and planning details that matter when choosing a residential plot.</p>
+  </div>
+  <div class="feature-grid">
+   <article class="feature-card"><div class="feature-icon">⌖</div><h3>Location Advantage</h3><p>Explore nearby roads, transport links and essential destinations.</p></article>
+   <article class="feature-card"><div class="feature-icon">▤</div><h3>Planned Roads</h3><p>Review the proposed layout and road network through project documents.</p></article>
+   <article class="feature-card"><div class="feature-icon">♧</div><h3>Open Spaces</h3><p>Discover the green areas and shared spaces shown in the layout plan.</p></article>
+   <article class="feature-card"><div class="feature-icon">⌂</div><h3>Future Planning</h3><p>Understand plot options and relevant project information before enquiring.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="layout-section">
+ <div class="container layout-grid">
+  <div>
+   <div class="eyebrow">Project layout</div>
+   <h2>Explore the Master Plan</h2>
+   <p>View the project layout, plot demarcation, internal roads and other proposed development features. Ask the team for the latest official plan and plot availability.</p>
+   <ul class="location-list">
+    <li>Plot layout and demarcation</li>
+    <li>Roads and access routes</li>
+    <li>Open spaces as shown in the plan</li>
+    <li>Project documentation</li>
+   </ul>
+   <a class="btn" href="#contact">Request Layout Plan →</a>
+  </div>
+  <img class="layout-image" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85" alt="Aerial view of green land and fields" loading="lazy">
+ </div>
+</section>
+
+<section id="amenities">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Amenities & infrastructure</div>
+   <h2>Plan for a Better Lifestyle</h2>
+   <p>Ask our team which amenities and infrastructure facilities are included in the actual project plan.</p>
+  </div>
+  <div class="amenities-grid">
+   <div class="amenity"><span>🚧</span><h3>Internal Roads</h3></div>
+   <div class="amenity"><span>💡</span><h3>Street Lighting</h3></div>
+   <div class="amenity"><span>🌳</span><h3>Green Spaces</h3></div>
+   <div class="amenity"><span>💧</span><h3>Water Facilities</h3></div>
+   <div class="amenity"><span>🛡</span><h3>Security Details</h3></div>
+   <div class="amenity"><span>🚰</span><h3>Drainage Plan</h3></div>
+   <div class="amenity"><span>🛣</span><h3>Connectivity</h3></div>
+   <div class="amenity"><span>📋</span><h3>Project Support</h3></div>
+  </div>
+ </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Visual gallery</div>
+   <h2>A Glimpse of Your Future</h2>
+   <p>Sample visual references for the project gallery. Replace them with real site photographs before publishing.</p>
+  </div>
+  <div class="gallery-grid">
+   <div class="gallery-item"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80" alt="Green open landscape" loading="lazy"><p>Open Landscapes</p></div>
+   <div class="gallery-item"><img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=700&q=80" alt="Tree-lined surroundings" loading="lazy"><p>Green Surroundings</p></div>
+   <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=700&q=80" alt="Modern building design" loading="lazy"><p>Modern Planning</p></div>
+   <div class="gallery-item"><img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=700&q=80" alt="House surrounded by trees" loading="lazy"><p>Residential Inspiration</p></div>
+   <div class="gallery-item"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=700&q=80" alt="Natural landscape" loading="lazy"><p>Natural Surroundings</p></div>
+   <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80" alt="Wide scenic landscape" loading="lazy"><p>Room to Imagine</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="approvals">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">RERA & project approvals</div>
+   <h2>Documentation You Can Review</h2>
+   <p>Check the applicable registration, approvals and legal documents with the relevant authority before making an investment decision.</p>
+  </div>
+  <div class="approval-grid">
+   <article class="approval-card">
+    <div class="approval-icon">✓</div><h3>RERA Registration</h3>
+    <p>Registration number and official project details can be presented here once verified.</p>
+    <a href="https://haryanarera.gov.in/" target="_blank" rel="noopener noreferrer">Visit Haryana RERA ↗</a>
+   </article>
+   <article class="approval-card">
+    <div class="approval-icon">▦</div><h3>Approved Layout</h3>
+    <p>Show the relevant approved layout plan and issuing authority's details here.</p>
+    <a href="#certificates">View Documents ↓</a>
+   </article>
+   <article class="approval-card">
+    <div class="approval-icon">◆</div><h3>Land Documents</h3>
+    <p>Provide verified land title and applicable supporting documentation for review.</p>
+    <a href="#contact">Request Details →</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="certificate-section" id="certificates">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Official documentation</div>
+   <h2>Certificates & Approvals</h2>
+   <p>A dedicated showcase for your project's actual certificates, NOCs, registration documents and approved plans.</p>
+  </div>
+  <div class="certificate-grid">
+   <article class="certificate-card">
+    <img src="https://placehold.co/700x450/f4f1e8/103f38?text=RERA+Certificate" alt="Sample RERA certificate preview" loading="lazy">
+    <h3>RERA Certificate</h3><p>Replace this sample with the verified registration certificate.</p>
+    <a href="#contact">Request a Copy →</a>
+   </article>
+   <article class="certificate-card">
+    <img src="https://placehold.co/700x450/f4f1e8/103f38?text=Approved+Layout+Plan" alt="Sample approved layout plan preview" loading="lazy">
+    <h3>Approved Layout Plan</h3><p>Display the official plan and approval reference here.</p>
+    <a href="#contact">Request a Copy →</a>
+   </article>
+   <article class="certificate-card">
+    <img src="https://placehold.co/700x450/f4f1e8/103f38?text=NOC+%26+Other+Documents" alt="Sample NOC document preview" loading="lazy">
+    <h3>NOC & Other Documents</h3><p>Show relevant NOCs and other verified supporting documents.</p>
+    <a href="#contact">Request a Copy →</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="location">
+ <div class="container location-grid">
+  <div>
+   <div class="eyebrow">Location advantage</div>
+   <h2>Find Us. Plan Your Visit.</h2>
+   <p>Discover the project location and explore nearby connectivity. Update this section with the client's confirmed address and Google Maps location.</p>
+   <ul class="location-list">
+    <li>Project address and directions</li>
+    <li>Nearby highways and main roads</li>
+    <li>Schools, hospitals and local markets</li>
+    <li>Site visit assistance</li>
+   </ul>
+   <a class="btn" href="#contact">Arrange a Site Visit →</a>
+  </div>
+  <iframe class="map-frame" title="Project location map" loading="lazy" src="https://maps.google.com/maps?q=Sonipat%2C%20Haryana&t=&z=11&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+ </div>
+</section>
+
+<section class="qr-section">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Connect with us</div>
+   <h2>Scan. Connect. Get Details.</h2>
+   <p>Temporary QR examples for the design preview. Replace these with the client's actual WhatsApp and payment QR codes.</p>
+  </div>
+  <div class="qr-grid">
+   <div class="qr-card">
+    <img src="https://placehold.co/220x220/ffffff/103f38?text=WhatsApp+QR" alt="Sample WhatsApp QR code" loading="lazy">
+    <h3>WhatsApp Enquiry</h3><p>Scan to connect with our team.</p>
+   </div>
+   <div class="qr-card">
+    <img src="https://placehold.co/220x220/ffffff/103f38?text=Payment+QR" alt="Sample payment QR code" loading="lazy">
+    <h3>Payment QR</h3><p>Replace with the verified client payment QR.</p>
+   </div>
+  </div>
+</div>
+</section>
+
+<section class="contact-section" id="contact">
+ <div class="container contact-grid">
+  <div class="contact-copy">
+   <div class="eyebrow">Let's connect</div>
+   <h2>Let's Discuss Your Plans.</h2>
+   <p>Interested in a plot or need project documents? Leave your details and our team can get in touch.</p>
+   <div class="contact-detail"><strong>Call Us</strong>+91 98765 43210</div>
+   <div class="contact-detail"><strong>Email</strong>info@example.com</div>
+   <div class="contact-detail"><strong>Visit</strong>Update with the client's official project address</div>
+  </div>
+  <form class="enquiry-form" action="#contact" method="get">
+   <h3>Request a Callback</h3>
+   <p>Share your details to discuss the project.</p>
+   <div class="form-grid">
+    <div class="field full"><label for="fullName">Full Name *</label><input id="fullName" name="name" type="text" placeholder="Enter your full name" required></div>
+    <div class="field"><label for="phone">Mobile Number *</label><input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9+\-\s]{10,15}" placeholder="Enter mobile number" required></div>
+    <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+    <div class="field"><label for="plotSize">Interested Plot Size</label><select id="plotSize" name="plot_size"><option value="">Select plot size</option><option>As per availability</option><option>Small plot</option><option>Medium plot</option><option>Large plot</option></select></div>
+    <div class="field"><label for="visit">Site Visit</label><select id="visit" name="site_visit"><option value="">Would you like a visit?</option><option>Yes, please</option><option>Not right now</option></select></div>
+    <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what information you need"></textarea></div>
+   </div>
+   <button type="submit" class="btn">Submit Enquiry →</button>
+   <p style="font-size:13px;margin:12px 0 0">Design preview only. Connect this form to your PHP/MySQL backend before launch.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div><a class="brand" href="#home"><span class="brand-icon" style="color:white">⌂</span><span><span class="brand-name" style="color:white">Deen Dayal</span><br><small>AFFORDABLE PLOTS</small></span></a><p style="margin-top:17px">Explore the project, review the documents and connect with our team for further details.</p></div>
+   <div><h3>Quick Links</h3><a href="#home">Home</a><a href="#about">About Us</a><a href="#project">Project</a><a href="#amenities">Amenities</a></div>
+   <div><h3>Project Information</h3><a href="#approvals">Approvals</a><a href="#certificates">Certificates</a><a href="#gallery">Gallery</a><a href="#location">Location</a></div>
+   <div><h3>Contact</h3><p>☎ +91 98765 43210</p><p>✉ info@example.com</p><p>Update with official address</p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Deen Dayal Affordable Plots. All rights reserved.</span><span>Project details and approvals should be verified before publication.</span></div>
+ </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+  const isOpen = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "✕" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+</script>
+</body>
+</html>
